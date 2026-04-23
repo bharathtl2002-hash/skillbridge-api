@@ -3,6 +3,10 @@
 ## Overview:
 This project is a backend API for a prototype attendance management system built as part of a take-home assignment. It supports multiple user roles and allows tracking attendance across training sessions.
 
+## Links:
+- Project Repository: https://github.com/bharathtl2002-hash/skillbridge-api  
+- Live Deployment: https://skillbridge-api-u4a1.onrender.com  
+- API Base URL: https://skillbridge-api-u4a1.onrender.com/api/
 ## Tech Stack:
 - Python
 - Django
