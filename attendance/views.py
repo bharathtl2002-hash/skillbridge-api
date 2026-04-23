@@ -18,8 +18,13 @@ def get_user_from_token(request):
     return User.objects.filter(id=user_id).first()
 @api_view(['POST'])
 def signup(request):
-    data = request.data
-    data['password'] = make_password(data['password'])
+    data = request.data.copy()
+    password = data.get('password')
+    if not password:
+        return Response({"error": "Password required"}, status=400)
+    if User.objects.filter(email=data.get('email')).exists():
+        return Response({"error": "Email already exists"}, status=400)
+    data['password'] = make_password(password)
     user = User.objects.create(**data)
     token = RefreshToken.for_user(user)
     return Response({
