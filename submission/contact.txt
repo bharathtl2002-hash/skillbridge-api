@@ -1,0 +1,7 @@
+Name: T L Bharath Kumar
+Email:bharathtl2002@gmail.com
+Phone: +91-9346912358
+GitHub: https://github.com/bharathtl2002-hash
+
+Most challenging part:
+Handling JWT authentication and implementing role-based access control across different endpoints.
